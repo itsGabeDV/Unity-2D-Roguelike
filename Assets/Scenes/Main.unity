@@ -129,8 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 773721606}
   - component: {fileID: 773721605}
+  - component: {fileID: 773721607}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: BoardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,6 +165,36 @@ Transform:
   - {fileID: 1756669853}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &773721607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773721604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fef6eecc5c1e64a8ed7984d31bc344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardManager
+  width: 8
+  height: 8
+  groundTiles:
+  - {fileID: 11400000, guid: 4e57352c3cbc3ae479552add04507945, type: 2}
+  - {fileID: 11400000, guid: d6cdafdf14dcc484a962dfebfbbd04ef, type: 2}
+  - {fileID: 11400000, guid: b138efda367484043b63e6fe6cc39c98, type: 2}
+  - {fileID: 11400000, guid: ba09c21b26362f944a8c5ffbe8467688, type: 2}
+  - {fileID: 11400000, guid: 0e3cde45cea1abc4f9ffe2c2f83727fb, type: 2}
+  - {fileID: 11400000, guid: 7585ca869cee27748a2401e63cb30165, type: 2}
+  - {fileID: 11400000, guid: 5865bdfaaa5ed9c4987daaf70ea5645f, type: 2}
+  - {fileID: 11400000, guid: ba09c21b26362f944a8c5ffbe8467688, type: 2}
+  - {fileID: 11400000, guid: b274e83f993c9134c94e598513abfa06, type: 2}
+  - {fileID: 11400000, guid: de975517d4115414a8c456347079bc81, type: 2}
+  - {fileID: 11400000, guid: bd3dc4110ad961a48a128435d0de86ef, type: 2}
+  - {fileID: 11400000, guid: dec9d0c184529b7429001a8a78504af9, type: 2}
+  wallTiles:
+  - {fileID: 11400000, guid: 733f70e4e42b76a40b1693c3d3567a05, type: 2}
+  - {fileID: 11400000, guid: e4b63002bca901741991aa3d2e0fab16, type: 2}
 --- !u!1 &1756669852
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +409,7 @@ Transform:
   m_GameObject: {fileID: 2105802753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

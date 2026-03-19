@@ -60,4 +60,15 @@ public class BoardManager : MonoBehaviour
         return m_Grid.GetCellCenterWorld((Vector3Int)cell);
     }
     
+    public CellData GetCellData(Vector2Int cellIndex)
+    {   
+        //Retrieve the search on the array to onlyt actual cells available in the level to avoid generating an exception
+        //trying to index a cell that doesnt exist   
+        if(cellIndex.x < 0 || cellIndex.x >= Width || cellIndex.y < 0 || cellIndex.y >= Height)
+        {
+            return null;
+        }
+
+        return m_BoardData[cellIndex.x, cellIndex.y];
+    }
 }
